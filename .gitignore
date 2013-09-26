@@ -17,8 +17,6 @@ project/plugins/project/
 
 ### Eclipse ###
 *.pydevproject
-.project
-.metadata
 bin/**
 tmp/**
 tmp/**/*
@@ -27,6 +25,7 @@ tmp/**/*
 *.swp
 *~.nib
 local.properties
+.metadata
 .classpath
 .settings/
 .loadpath
@@ -46,3 +45,4 @@ local.properties
 **/bin/**
 **/.cache
 
+*.zip
