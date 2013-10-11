@@ -2,23 +2,39 @@ import org.dupontmanual.image._
 import org.scalatest.{ FunSuite, Matchers }
 
 object WritingFunctions {
-  // given three colors and a size in pixels,
-  // produces an Image of three squares next to each other
+  /** produces: an image of three squares next to each other */
   def threeSquares(left: Color, center: Color, right: Color, size: Int): Image = {
     SquareFilled(left, size).beside(
-    SquareFilled(center, size)).beside(
-    SquareFilled(right, size))
+      SquareFilled(center, size)).beside(
+        SquareFilled(right, size))
   }
-  
 }
 
 class TestWritingFunctions extends FunSuite with Matchers {
   import WritingFunctions._
 
-  test("threeSquares") {
+  test("threeSquares examples") {
+    val ts1: Image = ??? // define an image that looks like threeSquares1.png here
+    val ts2: Image = ??? // define an image that looks like threeSquares2.png here
+    val ts3: Image = ??? // define an image that looks like threeSquares3.png here
+    ts1 shouldEqual Bitmap("images/threeSquares1.png")
+    ts2 shouldEqual Bitmap("images/threeSquares2.png")
+    ts3 shouldEqual Bitmap("images/threeSquares3.png")    
+  }
+  
+  test("threeSquares") {    
     threeSquares(Color.Red, Color.Blue, Color.Green, 20) shouldEqual Bitmap("images/threeSquares1.png")
     threeSquares(Color.Orange, Color.Black, Color.Brown, 30) shouldEqual Bitmap("images/threeSquares2.png")
     threeSquares(Color.Pink, Color.Red, Color.Black, 40) shouldEqual Bitmap("images/threeSquares3.png")
+  }
+  
+  test("pinwheel examples") {
+    val pw1: Image = ???
+    val pw2: Image = ???
+    val pw3: Image = ???
+    pw1 shouldEqual Bitmap("images/pinwheel1.png")
+    pw2 shouldEqual Bitmap("images/pinwheel2.png")
+    pw3 shouldEqual Bitmap("images/pinwheel3.png")
   }
   
   /*
@@ -28,6 +44,15 @@ class TestWritingFunctions extends FunSuite with Matchers {
     pinwheel(Book) shouldEqual Bitmap("images/pinwheel3.png")    
   }
   */
+  
+  test("bullseye examples") {
+    val be1: Image = ???
+    val be2: Image = ???
+    val be3: Image = ???
+    be1 shouldEqual Bitmap("images/bullseye1.png")
+    be2 shouldEqual Bitmap("images/bullseye2.png")
+    be3 shouldEqual Bitmap("images/bullseye3.png")
+  }
   
   /*
   test("bullseye") {
