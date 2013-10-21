@@ -1,8 +1,8 @@
-name := "writing-functions"
+name := "image-quizzes"
 
 version := "0.1"
 
-scalaVersion := "2.10.2"
+scalaVersion := "2.10.3"
 
 scalaSource in Compile <<= baseDirectory
 
@@ -21,5 +21,3 @@ libraryDependencies ++= Seq(
 )
 
 scalacOptions ++= Seq("-deprecation", "-feature")
-
-traceLevel in Test := -1

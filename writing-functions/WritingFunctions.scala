@@ -62,6 +62,15 @@ class TestWritingFunctions extends FunSuite with Matchers {
   }
   */
   
+  test("lollipop examples") {
+    val lp1: Image = ???
+    val lp2: Image = ???
+    val lp3: Image = ???
+    lp1 shouldEqual Bitmap("images/lollipop1.png")
+    lp2 shouldEqual Bitmap("images/lollipop2.png")
+    lp3 shouldEqual Bitmap("images/lollipop3.png")
+  }
+
   /*
   test("lollipop") {
     lollipop(10, 30, Color.Purple) shouldEqual Bitmap("images/lollipop1.png")
@@ -70,6 +79,15 @@ class TestWritingFunctions extends FunSuite with Matchers {
   }
   */
   
+  test("boxes examples") {
+    val bx1: Image = ???
+    val bx2: Image = ???
+    val bx3: Image = ???
+    bx1 shouldEqual Bitmap("images/boxes1.png")
+    bx2 shouldEqual Bitmap("images/boxes2.png")
+    bx3 shouldEqual Bitmap("images/boxes3.png")
+  }
+
   /*
   test("boxes") {
     boxes(10, Color.Blue, 20, Color.Green) shouldEqual Bitmap("images/boxes1.png")
@@ -78,6 +96,15 @@ class TestWritingFunctions extends FunSuite with Matchers {
   }
   */
   
+  test("threeOvals examples") {
+    val to1: Image = ???
+    val to2: Image = ???
+    val to3: Image = ???
+    to1 shouldEqual Bitmap("images/bullseye1.png")
+    to2 shouldEqual Bitmap("images/bullseye2.png")
+    to3 shouldEqual Bitmap("images/bullseye3.png")
+  }
+
   /*
   test("threeOvals") {
     threeOvals(Color.Aqua, Color.Tan, 20, 50) shouldEqual Bitmap("images/threeOvals1.png")

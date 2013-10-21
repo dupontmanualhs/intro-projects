@@ -1,5 +1,5 @@
 <projectDescription>
-  <name>image-exercises</name>
+  <name>image-quizzes</name>
   <buildSpec>
     <buildCommand>
       <name>org.scala-ide.sdt.core.scalabuilder</name>
@@ -11,14 +11,14 @@
   </natures>
   <linkedResources>
     <link>
-      <name>-home-sysadmin-intro-projects-image-exercises</name>
+      <name>-home-sysadmin-intro-projects-image-quizzes</name>
       <type>2</type>
-      <location>/home/sysadmin/intro-projects/image-exercises</location>
+      <location>/home/sysadmin/intro-projects/image-quizzes</location>
     </link>
     <link>
-      <name>-home-sysadmin-intro-projects-image-exercises</name>
+      <name>-home-sysadmin-intro-projects-image-quizzes</name>
       <type>2</type>
-      <location>/home/sysadmin/intro-projects/image-exercises</location>
+      <location>/home/sysadmin/intro-projects/image-quizzes</location>
     </link>
   </linkedResources>
 </projectDescription>

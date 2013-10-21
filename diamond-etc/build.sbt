@@ -1,8 +1,8 @@
-name := "writing-functions"
+name := "diamond-etc"
 
 version := "0.1"
 
-scalaVersion := "2.10.2"
+scalaVersion := "2.10.3"
 
 scalaSource in Compile <<= baseDirectory
 
@@ -17,9 +17,8 @@ unmanagedSourceDirectories in Test <<= Seq(scalaSource in Test).join
 resolvers += "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
 
 libraryDependencies ++= Seq(
-  "org.dupontmanual" %% "dm-image" % "0.1-SNAPSHOT"
+  "org.dupontmanual" %% "dm-image" % "0.1-SNAPSHOT",
+  "org.scalatest" %% "scalatest" % "2.0.RC2"
 )
 
 scalacOptions ++= Seq("-deprecation", "-feature")
-
-traceLevel in Test := -1
