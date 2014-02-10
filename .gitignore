@@ -46,3 +46,6 @@ local.properties
 **/.cache
 
 *.zip
+
+# Backups created by jEdit and Gedit
+*~

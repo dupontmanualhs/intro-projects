@@ -1,0 +1,24 @@
+<projectDescription>
+  <name>more-design-recipe</name>
+  <buildSpec>
+    <buildCommand>
+      <name>org.scala-ide.sdt.core.scalabuilder</name>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>org.scala-ide.sdt.core.scalanature</nature>
+    <nature>org.eclipse.jdt.core.javanature</nature>
+  </natures>
+  <linkedResources>
+    <link>
+      <name>-home-sysadmin-intro-projects-more-design-recipe</name>
+      <type>2</type>
+      <location>/home/sysadmin/intro-projects/more-design-recipe</location>
+    </link>
+    <link>
+      <name>-home-sysadmin-intro-projects-more-design-recipe</name>
+      <type>2</type>
+      <location>/home/sysadmin/intro-projects/more-design-recipe</location>
+    </link>
+  </linkedResources>
+</projectDescription>

@@ -7,7 +7,7 @@ object DiamondEtc {
 
 class TestDiamondEtc extends FunSuite with Matchers {
   import DiamondEtc._
-  
+    
   test("diamond examples") {
     val diamond1: Image = ???
     val diamond2: Image = ???

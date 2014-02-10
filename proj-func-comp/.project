@@ -1,0 +1,24 @@
+<projectDescription>
+  <name>function-composition</name>
+  <buildSpec>
+    <buildCommand>
+      <name>org.scala-ide.sdt.core.scalabuilder</name>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>org.scala-ide.sdt.core.scalanature</nature>
+    <nature>org.eclipse.jdt.core.javanature</nature>
+  </natures>
+  <linkedResources>
+    <link>
+      <name>-home-tobryan1-intro-projects-function-composition</name>
+      <type>2</type>
+      <location>/home/tobryan1/intro-projects/function-composition</location>
+    </link>
+    <link>
+      <name>-home-tobryan1-intro-projects-function-composition</name>
+      <type>2</type>
+      <location>/home/tobryan1/intro-projects/function-composition</location>
+    </link>
+  </linkedResources>
+</projectDescription>

@@ -5,8 +5,9 @@ import org.dupontmanual.image._
 object ImageQuiz1 {
   val R2D2 = Bitmap("images/R2D2.png")
   val Yoda = Bitmap("images/Yoda.png")
+  val DeathStar = Bitmap("images/DeathStar.png")
   
-  val img = R2D2
+  val img = DeathStar
   
   val pics = List(
     img.above(img).above(img).rotate(45.degrees),
