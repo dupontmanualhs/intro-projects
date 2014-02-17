@@ -76,6 +76,29 @@ object IntroToLists {
   //     going to make you do that on a quiz. (Don't worry if you don't get
   //     the wording of the Exception exactly right--it's enough that you
   //     remember that it throws an Exception.)
+  
+  // For #6-#9, think about what the answer has to be for the empty list in
+  //     order for the function to work out, and use that answer.
+  
+  // #6. Write the function product. It consumes a ListOfInt and produces
+  //     the result of multiplying them all together.
+  
+  // #7. Write the function andList. It consumes a ListOfBool and produces the
+  //     result of &&-ing them all together.
+  
+  // #8. Write the function orList. It consumes a ListOfBool and produces the
+  //     result of ||-ing them all together.
+  
+  // #9. Write the function drawCircles. It consumes a ListOfPt and produces an
+  //     Image. The image should be a 100x100 rectangle with a blue circle of
+  //     radius 5 at each point in the list. Remember, you shouldn't actually
+  //     display the image, just produce it.
+  //     To solve this problem, use the placeImage method. Here's an example
+  //     you should run in the console to see how it works.
+  //     
+  //     scala> import org.dupontmanual.image._
+  //     scala> val blueCirc: Image = CircleFilled(Color.Blue, 5)
+  //     scala> RectangleFilled(Color.White, 100, 100).placeImage(blueCirc, 50, 50).placeImage(blueCirc, 25, 40).placeImage(blueCirc, 90, 10).display()
 }
 
 class TestIntroToLists extends FunSuite with Matchers {
