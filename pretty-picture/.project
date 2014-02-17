@@ -1,0 +1,24 @@
+<projectDescription>
+  <name>image-exercises</name>
+  <buildSpec>
+    <buildCommand>
+      <name>org.scala-ide.sdt.core.scalabuilder</name>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>org.scala-ide.sdt.core.scalanature</nature>
+    <nature>org.eclipse.jdt.core.javanature</nature>
+  </natures>
+  <linkedResources>
+    <link>
+      <name>-home-sysadmin-intro-projects-image-exercises</name>
+      <type>2</type>
+      <location>/home/sysadmin/intro-projects/image-exercises</location>
+    </link>
+    <link>
+      <name>-home-sysadmin-intro-projects-image-exercises</name>
+      <type>2</type>
+      <location>/home/sysadmin/intro-projects/image-exercises</location>
+    </link>
+  </linkedResources>
+</projectDescription>
