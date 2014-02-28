@@ -26,7 +26,7 @@ object NonEmptyLists {
   def neloxFun(nelox: NonEmptyListOf[X]): ??? = {
     nelox match {
       case Cons(head, Empty) => 
-      case Cons(head, tail: NonEmptyListOf[X]) => 
+      case Cons(head, tail: NonEmptyListOf[X]) => head  neloxFun(tail)
     }
   } */
   
@@ -101,6 +101,11 @@ object NonEmptyLists {
     }
   }
   
+  /** given a ListOf[Point], produces an image of a closed polygon 
+      connecting the points */
+  def closedPolygon(points: ListOf[Point]): Image = {
+    openPolygon(putAtEnd(points.head, points))
+  }
   
 }
 
@@ -114,7 +119,7 @@ class TestNonEmptyLists extends FunSuite with Matchers {
   
   // uncomment each test as you write the functions
   // make sure you write your own test cases!
-  /*
+  
   test("max") {
     max(Cons(3.5, Empty)) shouldEqual 3.5
     max(Cons(3.5, Cons(-2.7, Cons(5.1, Cons(3.4, Empty))))) shouldEqual 5.1
@@ -154,6 +159,12 @@ class TestNonEmptyLists extends FunSuite with Matchers {
     reverse(Cons("a", Cons("b", Cons("c", Empty)))) shouldEqual 
         Cons("c", Cons("b", Cons("a", Empty)))
   }
-  */
+  
+  test("closedPolygon") {
+    closedPolygon(Cons(Point(0, 0), Cons(Point(50, 50), Empty))) shouldEqual Bitmap("poly3.png")
+    closedPolygon(Cons(Point(10, 10), Cons(Point(20, 20), Cons(Point(10, 30), 
+        Cons(Point(20, 50), Cons(Point(5, 35), Empty)))))) shouldEqual Bitmap("poly4.png")
+  }
+    
 
 }
