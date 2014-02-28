@@ -15,7 +15,7 @@ object NonEmptyLists {
   /** given a ListOf[X], produces ...
   def listOfXFun(listOfX: ListOf[X]): ??? = {
     listOfX match {
-      case Empty() => ???
+      case Empty => ???
       case Cons(head, tail) => head  listOfXFun(tail)
     }
   } */
@@ -26,7 +26,7 @@ object NonEmptyLists {
   def neloxFun(nelox: NonEmptyListOf[X]): ??? = {
     nelox match {
       case Cons(head, Empty) => 
-      case Cons(head, tail) => 
+      case Cons(head, tail: NonEmptyListOf[X]) => head  neloxFun(tail)
     }
   } */
   
@@ -46,13 +46,59 @@ object NonEmptyLists {
       case _ => throw new Exception("must have at least two values in the list")
     }
   } */
+    
 }
 
 class TestNonEmptyLists extends FunSuite with Matchers {
   import NonEmptyLists._
 
   test("product") {
-    product(Cons(1, Empty)) shouldBe 1
-    product(Cons(3, Cons(4, Cons(2, Empty)))) shouldBe 24
+    product(Cons(1, Empty)) shouldEqual 1
+    product(Cons(3, Cons(4, Cons(2, Empty)))) shouldEqual 24
   }
+  
+  // uncomment each test as you write the functions
+  // make sure you write your own test cases!
+  /*
+  test("max") {
+    max(Cons(3.5, Empty)) shouldEqual 3.5
+    max(Cons(3.5, Cons(-2.7, Cons(5.1, Cons(3.4, Empty))))) shouldEqual 5.1
+  }
+  
+  test("distance") {
+    distance(Point(5, 5), Point(5, 5)) shouldEqual 0
+    distance(Point(5, 5), Point(8, 9)) shouldEqual 5.0
+    distance(Point(5, 5), Point(20, 30)) shouldEqual math.sqrt(850)
+  }
+  
+  test("totalDistance") {
+    the [Exception] thrownBy totalDistance(Empty) should have message "must have at least two values in the list"
+    the [Exception] thrownBy totalDistance(Cons(Point(0, 0), Empty)) should have message "must have at least two values in the list"
+    totalDistance(Cons(Point(5, 5), Cons(Point(8, 9), Empty))) shouldEqual 5.0
+    totalDistance(Cons(Point(5, 5), Cons(Point(8, 9), 
+        Cons(Point(3, -3), Cons(Point(0, 0), Empty))))) shouldEqual
+        18 + math.sqrt(18)
+  }
+  
+  test("openPolygon") {
+    the [Exception] thrownBy openPolygon(Empty) should have message "must have at least two values in the list"
+    the [Exception] thrownBy openPolygon(Cons(Point(0, 0), Empty)) should have message "must have at least two values in the list"
+    openPolygon(Cons(Point(0, 0), Cons(Point(50, 50), Empty))) shouldEqual Bitmap("poly1.png")
+    openPolygon(Cons(Point(10, 10), Cons(Point(20, 20), Cons(Point(10, 30), 
+        Cons(Point(20, 50), Cons(Point(5, 35), Empty)))))) shouldEqual Bitmap("poly2.png")
+  }
+  
+  test("putAtEnd") {
+    putAtEnd("a", Cons("z", Cons("y", Cons("x", Empty)))) shouldEqual 
+      Cons("z", Cons("y", Cons("x", Cons("a", Empty))))
+    putAtEnd(2, Empty) shouldEqual Cons(2, Empty)
+  }
+  
+  test("reverse") {
+    reverse(Empty) shouldEqual Empty
+    reverse(Cons("a", Cons("b", Cons("c", Empty)))) shouldEqual 
+        Cons("c", Cons("b", Cons("a", Empty)))
+  }
+  */
+
 }
