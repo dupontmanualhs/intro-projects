@@ -46,7 +46,6 @@ object NonEmptyLists {
       case _ => throw new Exception("must have at least two values in the list")
     }
   } */
-    
 }
 
 class TestNonEmptyLists extends FunSuite with Matchers {
@@ -99,6 +98,13 @@ class TestNonEmptyLists extends FunSuite with Matchers {
     reverse(Cons("a", Cons("b", Cons("c", Empty)))) shouldEqual 
         Cons("c", Cons("b", Cons("a", Empty)))
   }
+  
+  test("closedPolygon") {
+    closedPolygon(Cons(Point(0, 0), Cons(Point(50, 50), Empty))) shouldEqual Bitmap("poly3.png")
+    closedPolygon(Cons(Point(10, 10), Cons(Point(20, 20), Cons(Point(10, 30), 
+        Cons(Point(20, 50), Cons(Point(5, 35), Empty)))))) shouldEqual Bitmap("poly4.png")
+  }
   */
+    
 
 }
